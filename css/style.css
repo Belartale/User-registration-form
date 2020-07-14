@@ -1,0 +1,61 @@
+body {
+    background-color: #eeebe5;
+}
+
+.wrapper {
+    width: 700px;
+    padding: 3em 0;
+    margin: 0 auto;
+}
+
+.control {
+    margin: 0;
+}
+
+.psw-strength {
+    display: none;
+    height: 5px;
+    margin-top: 5px;
+}
+
+.weak-password {
+    display: block;
+    width: 25%;
+    background-color: #b10f0f;
+}
+
+.middle-password {
+    display: block;
+    width: 50%;
+    background-color: #b1650f;
+}
+
+.strong-password {
+    display: block;
+    width: 100%;
+    background-color: #3f8514;
+}
+
+.ink-form .control .valid {
+    border: 1.5px solid #3f8514;
+}
+
+.ink-form .control .error {
+    border: 1.5px solid #b10f0f;
+}
+
+.hidden {
+    display: none;
+}
+
+.text-red {
+    color: #b10f0f;
+}
+
+.text-green {
+    color: #3f8514;
+}
+
+.text-yellow {
+    color: #b1650f;
+}

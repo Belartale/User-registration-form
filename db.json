@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "userName": "asdasd",
+      "phone": "0324234324234",
+      "email": "belan.artur@mail.com",
+      "psw": "q111111111",
+      "country": "qwe324",
+      "postCode": "asd324",
+      "userText": "sd23434",
+      "id": 1
+    }
+  ],
+  "logged": [
+    {
+      "loggedIn": false
+    }
+  ]
+}

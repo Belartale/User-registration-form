@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Browser events task</title>
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="http://fastly.ink.sapo.pt/3.1.10/css/ink.css"
+        />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <body>
+        <section class="wrapper">
+            <form id="r-form" class="ink-form">
+                <fieldset>
+                    <legend>Simply registration form</legend>
+                    <div class="control-group required">
+                        <label for="full-name">Full Name</label>
+                        <div class="control">
+                            <input
+                                name="text"
+                                id="full-name"
+                                type="text"
+                                placeholder="Please add your name"
+                                minlength="2"
+                            />
+                        </div>
+                    </div>
+                    <div class="control-group required">
+                        <label for="phone">Telephone</label>
+                        <div class="control">
+                            <input
+                                name="text"
+                                id="phone"
+                                type="text"
+                                placeholder="Please add you telephone number"
+                            />
+                        </div>
+                    </div>
+                    <div class="control-group required">
+                        <label for="email">Email</label>
+                        <div class="control">
+                            <input
+                                name="text"
+                                id="email"
+                                type="email"
+                                placeholder="Please add your email"
+                            />
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                    </div>
+                    <div class="control-group required">
+                        <label for="psw">Password</label>
+                        <div class="control">
+                            <input
+                                name="text"
+                                id="psw"
+                                type="password"
+                                placeholder=""
+                                minlength="7"
+                            />
+                        </div>
+                        <div>
+                            <div class="psw-strength" style="width: 100;"></div>
+                        </div>
+                        <p class="tip">
+                            Use at least one lowercase letter, one numeral, and
+                            seven characters.
+                        </p>
+                    </div>
+                    <div class="control-group required">
+                        <label for="psw-r">Repeat password</label>
+                        <div class="control">
+                            <input
+                                name="text"
+                                id="psw-r"
+                                type="password"
+                                placeholder=""
+                            />
+                        </div>
+                        <p class="tip">Repeat you password again</p>
+                    </div>
+                    <div class="control-group required">
+                        <label for="country">Country</label>
+                        <div class="control">
+                            <input
+                                name="text"
+                                id="country"
+                                type="text"
+                                placeholder="Please add country"
+                                minlength="1"
+                            />
+                        </div>
+                    </div>
+                    <div class="control-group required">
+                        <label for="postcode">Post code</label>
+                        <div class="control">
+                            <input
+                                name="text"
+                                id="postcode"
+                                type="text"
+                                placeholder="Please add your post code"
+                                minlength="5"
+                            />
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label for="add-text">Additional information</label>
+                        <div class="control">
+                            <textarea id="add-text"></textarea>
+                        </div>
+                        <p class="tip">
+                            Text length: <span id="char-count">0</span>
+                        </p>
+                    </div>
+                    <!--! button and messages-->
+                    <p class="valid-form text-green hidden">
+                        Successfully registered
+                    </p>
+                    <p class="invalid-form text-red hidden">
+                        Fill in all required fields and check your information
+                    </p>
+                    <p class="messageUserOrAdmin text-yellow"></p>
+                    <button class="ink-button push-right" type="submit">
+                        Submit
+                    </button>
+                </fieldset>
+            </form>
+        </section>
+        <script src="js/script.js"></script>
+    </body>
+</html>
